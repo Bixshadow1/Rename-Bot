@@ -90,9 +90,9 @@ if __name__ == "__main__" :
 
 Bot = Client(
     "Rename Bot",
-    bot_token=os.environ.get("BOT_TOKEN"),
-    api_id=int(os.environ.get("APP_ID", 12345)),
-    api_hash=os.environ.get("API_HASH")
+    bot_token=os.environ.get("1997260116:AAGxHeJ49Hmi4IBwyrX7dEvFK6KTqaRVdxo"),
+    api_id=int(os.environ.get("8982599"),
+    api_hash=os.environ.get("314c1e5fcf9d790caea99413e0ceb545")
 )
 
 @Bot.on_callback_query(filters.user(AUTH_USERS) if PRIVATE else None)

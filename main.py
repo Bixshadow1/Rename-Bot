@@ -31,7 +31,7 @@ ADL_BOT_RQ = {}
 START_TEXT = """
 Hello {} , I'am a simple file or media rename bot with permanent thumbnail support.
 
-Made by @FayasNoushad
+Made by @zehnlibot
 """
 HELP_TEXT = """
 <b><u>Rename</u></b>
@@ -47,22 +47,17 @@ HELP_TEXT = """
 <b><u>Show Thumbnail</u></b>
 ➠ Send /showthumb for view current thumbnail.
 
-Made by @FayasNoushad
+Made by @zehnlibot \n Bots collection: @Mening_botlarim.
 """
 ABOUT_TEXT = """
-- **Bot :** `Rename Bot`
-- **Creator :** [Fayas](https://telegram.me/TheFayas)
-- **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
-- **Credits :** `Everyone in this journey`
-- **Source :** [Click here](https://github.com/FayasNoushad/Rename-Bot)
-- **Language :** [Python3](https://python.org)
-- **Library :** [Pyrogram v1.2.0](https://pyrogram.org)
-- **Server :** [Heroku](https://heroku.com)
+- **Bot :** `@eRenameBot`
+- **Creator :** [islom3001](https://telegram.me/zehnlibot)
+- **Channel :** [bots collection](https://telegram.me/mening_botlarim)
 """
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
-        InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
+        InlineKeyboardButton('Channel', url='https://telegram.me/mening_botlarim'),
+        InlineKeyboardButton('Feedback', url='https://telegram.me/zehnlibot')
         ],[
         InlineKeyboardButton('Help', callback_data='help'),
         InlineKeyboardButton('About', callback_data='about'),
@@ -368,7 +363,7 @@ async def rename(bot, message):
                     document=new_file_name,
                     thumb=thumb_image_path,
                     caption=description,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/FayasNoushad')]]),
+                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Join Updates Channel ⚙', url='https://telegram.me/mening_botlarim')]]),
                     reply_to_message_id=message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=("<code>Downloaded Successfully! Now I am Uploading to Telegram...</code>", a, c_time)
